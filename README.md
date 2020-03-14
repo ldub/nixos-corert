@@ -3,7 +3,7 @@ Attempting to build and run a CoreRT program on NixOS
 
 Code taken from [dotnet/corert](https://github.com/dotnet/corert/tree/master/samples/HelloWorld) and slightly modified.
 
-## Build Instructions
+## Build
 
 Ubuntu:
 ```
@@ -14,10 +14,22 @@ make build
 
 Ubuntu without using `apt-get`:
 ```
-TODO
+nix-shell -p dotnet-sdk -p ... ??? TODO
+make build
 ```
 
 NixOS:
 ```
-TODO
+# TODO: something with autopatchelf and nix-build
+```
+
+## Run
+Ubuntu:
+```
+make run
+```
+
+NixOS:
+```
+make run
 ```
